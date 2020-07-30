@@ -1,0 +1,21 @@
+{
+    "name": "abhi/lendinvest",
+    "description": "lendinvest test",
+    "type": "project",
+    "require": {
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "LendInvestApp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "abhi",
+            "email": "abhi.uk96@gmail.com"
+        }
+    ]
+}
