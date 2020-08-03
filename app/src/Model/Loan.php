@@ -9,6 +9,7 @@ class Loan
     //Each loan is split in multiple tranches.
     private $tranches = [];
 
+
     public function __construct($loanStartDate, $loanEndDate, $tranches)
     {
         $this->setLoanStartDate($loanStartDate);
