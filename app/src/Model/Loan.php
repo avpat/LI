@@ -1,7 +1,13 @@
 <?php
 declare(strict_types=1);
 
-class Loan
+namespace LendInvest;
+
+namespace LendInvest\Model;
+
+use LendInvest\Model\Interfaces\LoanInterface;
+
+class Loan implements LoanInterface
 {
     //each loan has start date and end date
     private $loanStartDate;

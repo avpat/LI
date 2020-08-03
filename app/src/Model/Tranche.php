@@ -1,8 +1,14 @@
 <?php
 
-use TrancheInterface\TrancheInterface;
+declare(strict_types=1);
 
-class Tranche extends TrancheInterface
+namespace LendInvest;
+
+namespace LendInvest\Model;
+
+use LendInvest\Model\Interfaces\TrancheInterface;
+
+class Tranche implements TrancheInterface
 {
     //each tranche has a different ROI
     private $rateOfInterest;
