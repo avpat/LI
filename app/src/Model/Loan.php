@@ -9,6 +9,7 @@ use LendInvest\Model\Interfaces\LoanInterface;
 
 class Loan implements LoanInterface
 {
+
     //each loan has start date and end date
     private $loanStartDate;
     private $loanEndDate;
@@ -25,29 +26,32 @@ class Loan implements LoanInterface
 
     /**
      * @param $loanStartDate
+     * @return \DateTime
      */
-    private function setLoanStartDate($loanStartDate)
+    private function setLoanStartDate($loanStartDate): \DateTime
     {
         $this->loanStartDate = $loanStartDate;
     }
 
     /**
      * @param $loanEndDate
+     * @return \DateTime
      */
-    private function setLoanEndDate($loanEndDate)
+    private function setLoanEndDate($loanEndDate): \DateTime
     {
         $this->loanEndDate = $loanEndDate;
     }
 
     /**
      * @param $tranches
+     * @return array
      */
-    private function setTranches($tranches)
+    private function setTranches($tranches) : array
     {
         if(is_array($tranches))
         {
-            foreach ($tranches as $tranch) {
-                array_push($tranches, $tranch);
+            foreach ($tranches as $tranche) {
+                array_push($this->tranches, $tranche);
             }
         }
 

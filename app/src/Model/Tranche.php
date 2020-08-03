@@ -24,33 +24,35 @@ class Tranche implements TrancheInterface
     }
 
     /**
-     * @return mixed
+     * @return float
      */
-    public function getMaxLimit()
+    public function getMaxLimit() : float
     {
         return $this->maxLimit;
     }
 
     /**
-     * @param mixed $maxLimit
+     * @param $maxLimit
+     * @return float
      */
-    public function setMaxLimit($maxLimit): void
+    public function setMaxLimit($maxLimit): float
     {
         $this->maxLimit = $maxLimit;
     }
 
     /**
-     * @return mixed
+     * @return float
      */
-    public function getRateOfInterest()
+    public function getRateOfInterest() :float
     {
         return $this->rateOfInterest;
     }
 
     /**
-     * @param mixed $rateOfInterest
+     * @param $rateOfInterest
+     * @return float
      */
-    public function setRateOfInterest($rateOfInterest): void
+    public function setRateOfInterest($rateOfInterest): float
     {
         $this->rateOfInterest = $rateOfInterest;
     }
