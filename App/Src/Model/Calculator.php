@@ -8,7 +8,7 @@ namespace LendInvest\Model;
 
 use LendInvest\Model\Interfaces\CalculatorInterface;
 
-class calculate implements CalculatorInterface
+class Calculator implements CalculatorInterface
 {
 
     private $accumulatedInterest;
