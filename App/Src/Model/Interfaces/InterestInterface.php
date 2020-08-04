@@ -8,8 +8,6 @@ namespace LendInvest\Model;
 
 namespace LendInvest\Model\Interfaces;
 
-namespace InterestInterface;
-
 interface InterestInterface
 {
     //get rate of interest

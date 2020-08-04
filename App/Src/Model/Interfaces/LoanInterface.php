@@ -8,8 +8,6 @@ namespace LendInvest\Model;
 
 namespace LendInvest\Model\Interfaces;
 
-namespace LoanInterface;
-
 use LendInvest\Model\Interfaces\TrancheInterface;
 
 /**
@@ -20,6 +18,8 @@ use LendInvest\Model\Interfaces\TrancheInterface;
 interface LoanInterface
 {
     //lets only expose required implementation details
+    public function getLoan() : array;
+
     //loan will have state ( open or close)
     public function getLoanState():void;
 
@@ -36,3 +36,5 @@ interface LoanInterface
     public function getEndDate(): \DateTime;
 
 }
+
+

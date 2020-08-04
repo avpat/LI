@@ -8,7 +8,6 @@ namespace LendInvest\Model;
 
 namespace LendInvest\Model\Interfaces;
 
-namespace CalculatorInterface;
 
 interface CalculatorInterface
 {

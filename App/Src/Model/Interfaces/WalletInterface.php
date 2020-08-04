@@ -8,8 +8,6 @@ namespace LendInvest\Model;
 
 namespace LendInvest\Model\Interfaces;
 
-namespace WalletInterface;
-
 
 interface WalletInterface
 {
